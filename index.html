@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinogo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin-top: 60px; /* Отступ для фиксированного меню */
+        }
+        
+
+        .popular {
+            margin-bottom: 15px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5em;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        .banner {
+            background-image: url('banner.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            text-align: center;
+            padding: 100px 20px;
+            margin-top: 60px;
+        }
+
+        .content-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .movie-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .movie-item img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .movie-item h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .movie-item p {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .movie-item a {
+            text-decoration: none;
+            color: white;
+            background-color: #ff6600;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .movie-item a:hover {
+            background-color: #cc5200;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: relative;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Kinogo</div>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="#">Фильмы</a>
+        <a href="#">Сериалы</a>
+        <a href="#">Новинки</a>
+        <a href="#">Контакты</a>
+    </nav>
+</header>
+
+<div class="banner">
+    <h1>Добро пожаловать на Kinogo!</h1>
+    <p>Смотрите лучшие фильмы и сериалы онлайн</p>
+</div>
+
+<div class="content-section">
+    <h2 id= 'popular'>Популярные фильмы</h2>
+    <div class="movie-grid">
+
+        <div class="movie-item">
+            <img src="https://kinogo.ec/uploads/mini/minifull/717/1585402164-1202531922.webp" alt="Movie 3">
+            <h3>1+1 (2011)</h3>
+            <p><p>
+            <a href="1+1.html">Смотреть</a>
+        </div>
+    
+        <div class="movie-grid">
+            <div class="movie-item">
+                <img src="https://kinogo.ec/uploads/mini/minifull/ebd/1585405791-1670091068.webp" alt="Movie 3">
+                <h3>1+1: Голливудская история (2017)</h3>
+                <p><p>
+                <a href="1+12017.html">Смотреть</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Kinogo. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
