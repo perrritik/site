@@ -10,7 +10,7 @@ def create_html_page(filename, title, cover, source, year,ratio):
 <body>
 
 <header>
-    <div class="logo">Kinogo</div>
+    <div class="logo">MovieRU</div>
     <nav>
         <a href="index.html">Главная</a>
         <a href="#">Фильмы</a>
@@ -37,7 +37,7 @@ def create_html_page(filename, title, cover, source, year,ratio):
 </div>
 
 <footer>
-    <p>&copy; 2024 Kinogo. Все права защищены.</p>
+    <p>&copy; 2024 MovieRU. Все права защищены.</p>
 </footer>
 
 </body>
